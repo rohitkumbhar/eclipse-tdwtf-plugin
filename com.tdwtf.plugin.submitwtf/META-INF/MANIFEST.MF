@@ -4,10 +4,10 @@ Bundle-Name: Submit WTF
 Bundle-SymbolicName: com.tdwtf.plugin.submitwtf; singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: com.tdwtf.plugin.submitwtf.Activator
-Bundle-Vendor: TDWTF
+Bundle-Vendor: Rohit Kumbhar
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.core.resources,
- org.eclipse.jface.text;bundle-version="3.6.1"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+ org.eclipse.jface.text
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-ActivationPolicy: lazy
