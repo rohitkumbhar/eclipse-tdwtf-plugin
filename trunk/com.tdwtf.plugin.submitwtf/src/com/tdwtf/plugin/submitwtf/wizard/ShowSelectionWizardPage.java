@@ -20,7 +20,6 @@ public class ShowSelectionWizardPage extends WizardPage {
 		setDescription("Modify/Anonymize your code snippet if necessary.");
 	}
 
-	@Override
 	public void createControl(Composite parent) {
 		
 		Composite composite = new Composite(parent, SWT.NULL);

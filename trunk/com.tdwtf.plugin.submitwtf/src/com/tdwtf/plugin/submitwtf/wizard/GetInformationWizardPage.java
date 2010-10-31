@@ -23,7 +23,6 @@ public class GetInformationWizardPage extends WizardPage {
 		setDescription("Info and comments");
 	}
 
-	@Override
 	public void createControl(Composite parent) {
 
 		Composite composite = new Composite(parent, SWT.NULL);
