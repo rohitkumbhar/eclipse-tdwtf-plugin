@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.5"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="com.tdwtf.plugin.submitwtf.contribution1">
+         <menu
+               label="The Daily WTF"
+               path="additions"
+               id="com.tdwtf.plugin.submitwtf.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Submit WTF"
+               class="com.tdwtf.plugin.submitwtf.popup.actions.SubmitWTFAction"
+               menubarPath="com.tdwtf.plugin.submitwtf.menu1/group1"
+               enablesFor="1"
+               id="com.tdwtf.plugin.submitwtf.newAction">
+         </action>
+      </objectContribution>
+      <!-- add to editor context menu -->
+      <objectContribution
+            id="Plugin.EditorContribution"
+            objectClass="org.eclipse.ui.IEditorInput"
+            nameFilter="*.*">
+            <menu
+               label="The Daily WTF"
+               path="additions"
+               id="com.tdwtf.plugin.submitwtf.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+            <action
+               label="Submit WTF"
+               class="com.tdwtf.plugin.submitwtf.popup.actions.SubmitWTFAction"
+               menubarPath="com.tdwtf.plugin.submitwtf.menu1/group1"
+               enablesFor="1"
+               id="com.tdwtf.plugin.submitwtf.newAction">
+         </action>
+        </objectContribution>
+   </extension>
+</plugin>
